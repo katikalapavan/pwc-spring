@@ -1,0 +1,6 @@
+package com.testapp;
+
+public class Product {
+private String title;
+private default
+}

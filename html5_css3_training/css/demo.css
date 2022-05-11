@@ -1,0 +1,44 @@
+h1{
+    color: navy;
+  margin-left: 20px;
+}
+
+p.p1{
+    border:2px solid purple;
+    border-radius: 25%;
+}
+p.p2{
+    border-style:double;
+}
+#div-container{
+    border-radius: 25px 40px 10px ;
+    background: lightcoral;
+    padding: 20px;
+    width: 200px;
+    height: 140px;
+}
+#div-container2{
+   
+    height: 150px;
+    background-image: conic-gradient(yellow,red,pink,green);
+}
+#div-container3{
+    
+    border-radius: 25px;
+   background: lightcoral;
+   box-shadow:10px 10px 5px lightblue;
+    padding: 20px;
+    position: relative;
+    animation-name: app;
+    animation-duration: 5s;
+    width: 200px; 
+    height:140px;
+    animation-iteration-count: 3;
+}
+@keyframes app {
+    0% {background-color: purple; left:0px; top:0px;}
+    25% {background-color:pink;left:20px;top:0px;}
+    50% {background-color:red;left:200px;top:200px;}
+    75% {background-color:cornflowerblue;left:0px;top:200px;}
+    100% {background-color:purple;left:0px;top:0px;}
+}

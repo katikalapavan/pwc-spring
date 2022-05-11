@@ -1,0 +1,15 @@
+package com.client;
+
+public class update {
+
+	public static void main(String[] args) {
+		Session session=HibernateUtility.getSession();
+		Transaction tx=session.beginTransaction();
+		Employee em=new Employee(101,"admin","mumbai");
+		session.save(em);
+		tx.commit();
+		System.out.println("user added");
+
+	}
+
+}

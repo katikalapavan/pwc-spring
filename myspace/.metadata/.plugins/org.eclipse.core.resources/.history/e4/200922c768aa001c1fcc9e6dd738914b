@@ -1,0 +1,25 @@
+package com.testapp;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class CalculatorTestTest {
+
+	@Test
+	
+	void testTestAdd() {
+		assertEquals(25,new Calculator().add(12,13));
+	}
+
+	@Test
+	void testTestSub() {
+		assertEquals(1,new Calculator().sub(13,12));
+	}
+
+	@Test
+	void testTestMul() {
+		assertEquals(6,new Calculator().mul(2,3));
+	}
+
+}

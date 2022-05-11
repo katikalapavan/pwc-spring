@@ -1,0 +1,18 @@
+package com.stream;
+import java.util.ArrayList;
+import java.util.List;
+
+
+public class Productapp {
+public static void main(String[] args) {
+	List<String>members=new ArrayList<String>();
+	members.add("admin");
+	members.add("administrator");
+	members.add("MELLESH");
+	members.add("MANAGER");
+	
+	members.add("tester");
+	
+	
+}
+}

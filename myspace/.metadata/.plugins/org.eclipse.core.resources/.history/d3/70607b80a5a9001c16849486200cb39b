@@ -1,0 +1,6 @@
+package com.sam;
+
+public interface Defaultdemo {
+public void show();
+public void add();
+}

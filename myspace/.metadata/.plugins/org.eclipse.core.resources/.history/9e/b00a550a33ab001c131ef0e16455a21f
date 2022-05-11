@@ -1,0 +1,16 @@
+package com.student;
+import org.hibernate.Hibernate;
+
+import org.hibernate.Session;
+import org.hibernate.Transaction;
+import com.entity.Employee;
+import com.hibernate.HibernateUtility;
+public class Student {
+	Session session=HibernateUtility.getSession();
+	Transaction tx=session.beginTransaction();
+	Employee em=new Employee(101,"raju","hindi,900");
+	session.save(em);
+	tx.commit();
+	System.out.println("user added");
+}
+}

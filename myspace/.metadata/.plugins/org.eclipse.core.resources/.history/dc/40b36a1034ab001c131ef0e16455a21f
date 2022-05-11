@@ -1,0 +1,16 @@
+package com.client;
+
+import org.hibernate.Session;
+
+import com.hibernate.HibernateUtility;
+
+public class Loademp {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Session session=HibernateUtility.getSession();
+		Query query =(Query)session.createQuery("from Employee");
+		List<Employee> lst=session;
+	}
+
+}

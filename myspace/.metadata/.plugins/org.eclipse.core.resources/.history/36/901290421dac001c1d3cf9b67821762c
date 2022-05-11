@@ -1,0 +1,20 @@
+package com.examples.business.rules;
+import com.examples.business.data.StudentDAO;
+import java.awt.*;
+import java.awt.event.*;
+
+import javax.swing.*;
+
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+public class Studentinsert {
+	
+	public static void main(String[] args) throws SQLException{
+		
+		StudentDAO ob =new StudentDAO();
+		String data="nsert";
+		PreparedStatement pst=ob.conn.prepareStatement(data);
+
+}
+}

@@ -1,0 +1,24 @@
+package com.examples.business.rules;
+import com.examples.business.data.StudentDAO;
+
+public class Studentinsert {
+
+	public static void main(String[] args) {
+		String q = "insert into STUDENT_MASTER values(101)";
+	}
+
+
+	
+
+}
+/* String q = "insert into feedback values('"+radio+"','"+radio1+"','"+radio2+"','"+radio3+"','"+radio4+"','"+radio5+"','"+comments+"')";
+
+try{
+conn c = new conn();
+c.s.executeUpdate(q);
+JOptionPane.showMessageDialog(null,"Thankyou For Giving us a Valuble Feedback");
+this.setVisible(false);
+}catch(Exception e){}
+}else if(ae.getSource()==b2){
+this.setVisible(false);
+}*/

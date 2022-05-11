@@ -1,0 +1,26 @@
+package com.stream;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
+public class Demo1 {
+	public static void main(String[] args) {
+		List<String>members=new ArrayList<String>();
+		members.add("admin");
+		members.add("administrator");
+		members.add("MELLESH");
+		members.add("MANAGER");
+		
+		members.add("tester");
+		//members.stream().filter((s)->s.startsWith("M")).map(String::toLowerCase).forEach(System.out::println);
+		//members.stream().sorted().filter((s)->s.startsWith("M")).map(String::toLowerCase).forEach(System.out::println);
+		//List<String> newdata=members.stream().sorted().filter((s)->s.startsWith("M")).map(String::toLowerCase).collect(Collectors.toList());
+		List<String> newdata=members.stream().sorted().filter((s)->s.startsWith("M")).map(String::toLowerCase).collect(Collectors.toList());
+		
+	System.out.println(newdata);
+	long data = members.stream().filter((s)->s.startsWith("M")).count();
+	System.out.println(data);
+	}
+	
+	
+
+}

@@ -1,0 +1,24 @@
+package com.testapp;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class CalculatorTestTest {
+
+	@Test
+	void testTestAdd() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testTestSub() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testTestMul() {
+		fail("Not yet implemented");
+	}
+
+}

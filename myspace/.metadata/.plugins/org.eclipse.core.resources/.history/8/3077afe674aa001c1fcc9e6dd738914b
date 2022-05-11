@@ -1,0 +1,24 @@
+package com.testapp;
+import java.util.ArrayList;
+public class Shopping {
+private ArrayList<Product> al;
+
+public Shopping(){
+	al=new ArrayList<Product>();
+}
+public void AddItem(Product product) {
+	al.add(product);
+}
+public int getItemscount()
+{
+	return al.size();
+}
+public void removeProduct(Product item)
+throws ProductNotFoundException
+{
+	if(!al.remove(item)) {
+		throw new ProductNotFoundException();
+	}
+}
+}
+
